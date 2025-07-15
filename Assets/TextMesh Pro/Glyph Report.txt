@@ -1,0 +1,14 @@
+Font: Market Deco  Style: Regular
+Point Size: 79   Padding: -1066988712   SP/PD Ratio: -1350619000,0%
+
+Characters included: 97/99
+Missing characters: 2
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+ID: 8203	Hex: 200B	Char [​]
+ID: 9633	Hex: 25A1	Char [□]
+
+Characters excluded from packing:
+----------------------------------------
