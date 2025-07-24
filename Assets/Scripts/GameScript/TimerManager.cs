@@ -1,14 +1,22 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimerManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text _SayacText;
 
     public float _toplamSure;
-    private float _GuncelSure;
+    public float _GuncelSure {  get; private set; }
     private bool _isPlaying;
+
+    private GameManager _gameManager;
+
+    private void Awake()
+    {
+        _gameManager = Object.FindAnyObjectByType<GameManager>();
+    }
 
     void Start()
     {
@@ -44,8 +52,27 @@ public class TimerManager : MonoBehaviour
             {
                 _isPlaying = false;
                 _SayacText.text = "00";
+                OyunuBitir();
             }
             yield return null;
+        }
+    }
+
+    private void OyunuBitir()
+    {
+        Debug.Log("Doðru Sayýsý = " +_gameManager._dogruSayisi);
+        Debug.Log("Yanlýþ Sayýsý = " +_gameManager._yanlisSayisi);
+        
+        GameObject ustButon = GameObject.Find("UstButon");
+        GameObject altButon = GameObject.Find("AltButon");
+
+        if (ustButon != null)
+        {
+            ustButon.GetComponent<Button>().interactable = false;
+        }
+        if (altButon != null)
+        {
+            altButon.GetComponent<Button>().interactable = false;
         }
     }
    

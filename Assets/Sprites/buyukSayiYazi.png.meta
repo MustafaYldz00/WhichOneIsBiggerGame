@@ -168,12 +168,12 @@ TextureImporter:
       name: buyukSayiYazi_0
       rect:
         serializedVersion: 2
-        x: 152
-        y: 91
-        width: 20
-        height: 26
+        x: 142
+        y: 41
+        width: 213
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,297 +186,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_1
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 90
-        width: 62
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8fb2d6f364c2dbe0800000000000000
-      internalID: -1453883796065435761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_2
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 91
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc91e0d0e40284fa0800000000000000
-      internalID: -5816363399150429745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_3
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 90
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8325811ccf4fdd010800000000000000
-      internalID: 1215396840868434488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_4
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 91
-        width: 37
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44fcfa793c2342250800000000000000
-      internalID: 5918911625916567364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_5
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 90
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 32a24234a32bb12d0800000000000000
-      internalID: -3306853538069206493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_6
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 54
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db544c3d26eb8b850800000000000000
-      internalID: 6393069002721347005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_7
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 54
-        width: 23
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c76fe46a044dfe10800000000000000
-      internalID: 2233015801679407044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_8
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 54
-        width: 24
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 947826a2fb054b060800000000000000
-      internalID: 6968283305429075785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_9
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 54
-        width: 31
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c621cffe521275650800000000000000
-      internalID: 6221477857059410540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 54
-        width: 9
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0422842bffac10d70800000000000000
-      internalID: 9007703929274245696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_11
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 54
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc86d02173faa4b90800000000000000
-      internalID: -7256795198493202225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_12
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 54
-        width: 16
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 458776efb846eb830800000000000000
-      internalID: 4088816064130414676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buyukSayiYazi_13
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 45
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dff50db7dd9e94530800000000000000
-      internalID: 3839857294784356349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6f4ecf632c5b1904295e9a48533efaad
     internalID: 0
     vertices: []
     indices: 
@@ -485,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buyukSayiYazi_1: -245602902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
