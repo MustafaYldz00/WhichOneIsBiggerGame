@@ -30,6 +30,19 @@ public class TimerManager : MonoBehaviour
         StartCoroutine(SayacBasla());
     }
 
+    public void PauseTimer()
+    {
+        _isPlaying = false;
+    }
+    public void ResumeTimer()
+    {
+        if (_GuncelSure > 0 && !_isPlaying)
+        {
+            _isPlaying = true;
+            StartCoroutine(SayacBasla());
+        }
+    }
+
     IEnumerator SayacBasla()
     {
         yield return new WaitForSeconds(0.001f);

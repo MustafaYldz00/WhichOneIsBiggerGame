@@ -29,10 +29,11 @@ public class GameManager : MonoBehaviour
 
     private TimerManager _timerManager;
     private DaireManager _daireManager;
+    private TrueFalse _trueFalse;
     private void Awake()
     {
         Instance = this;
-        
+        _trueFalse = Object.FindAnyObjectByType<TrueFalse>();
         _timerManager = Object.FindAnyObjectByType<TimerManager>();
         _daireManager = Object.FindAnyObjectByType<DaireManager>();
     }
@@ -144,11 +145,16 @@ public class GameManager : MonoBehaviour
         {
             _buyukDeger = _ustDeger;
         }
-        else
+        else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
-            BirinciFonksiyon();
         }
+        if (_ustDeger == _altDeger)
+        {
+            BirinciFonksiyon();
+            return;
+        }
+
         _ustText.text = _ustDeger.ToString();
         _altText.text = _altDeger.ToString();
 
@@ -314,6 +320,7 @@ public class GameManager : MonoBehaviour
             _daireManager.DaireScaleAc(_oyunSayac % 5);
             _oyunSayac++;
             _dogruSayisi++;
+            _trueFalse.activeTrue();
             KacinciOyun();
 
         }
@@ -323,6 +330,7 @@ public class GameManager : MonoBehaviour
             _daireManager.DaireScaleAc(_oyunSayac % 5);
             _oyunSayac++;
             _yanlisSayisi++;
+            _trueFalse.activeFalse();
             KacinciOyun();
         }
 
