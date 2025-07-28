@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _textImageBuyukSayi;
     [SerializeField] private Image _Alt;
     [SerializeField] private Image _Ust;
-    [SerializeField] private TMP_Text _ustText, _altText;
+    [SerializeField] private TMP_Text _ustText, _altText, _puanText;
     
 
     public int _kacincioyun {  get;  set; }
@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     private int _altDeger, _ustDeger;
     private int _buyukDeger;
     private int _butonDegeri;
+    public int _toplamPuan { get; private set;}
+    private int _artisPuani; 
     public int _dogruSayisi {  get; private set; } 
     public int _yanlisSayisi { get; private set; }
 
@@ -43,8 +45,10 @@ public class GameManager : MonoBehaviour
         _kacincioyun = 0;
         _oyunSayac = 0;
         _dogruSayisi = 0;
+        _toplamPuan = 0;
         _ustText.text = "";
         _altText.text = "";
+        _puanText.text = "0";
         SahneEkranýnýGuncelle();
     }
 
@@ -56,7 +60,7 @@ public class GameManager : MonoBehaviour
         _textImage.GetComponent<CanvasGroup>().DOFade(1, 1f);
         _Alt.GetComponent<RectTransform>().DOLocalMoveX(0, 1f).SetEase(Ease.OutBack);
         _Ust.GetComponent<RectTransform>().DOLocalMoveX(0, 1f).SetEase(Ease.OutBack);
-        //OyunaBasla();
+        OyunaBasla();
     }
 
     public void OyunaBasla()
@@ -74,30 +78,37 @@ public class GameManager : MonoBehaviour
         if (_oyunSayac < 5)
         {
             _kacincioyun = 1;
+            _artisPuani = 10;
         }
         else if (_oyunSayac >= 5 && _oyunSayac < 10)
         {
             _kacincioyun = 2;
+            _artisPuani = 15;
         }
         else if (_oyunSayac >= 10 && _oyunSayac < 15)
         {
             _kacincioyun = 3;
+            _artisPuani = 20;
         }
         else if (_oyunSayac >= 15 && _oyunSayac < 20)
         {
             _kacincioyun = 4;
+            _artisPuani = 25;
         }
         else if (_oyunSayac >= 20 && _oyunSayac < 25)
         {
             _kacincioyun = 5;
+            _artisPuani = 30;
         }
         else if (_oyunSayac >= 25 && _oyunSayac < 30)
         {
             _kacincioyun = 6;
+            _artisPuani = 35;
         }
         else if (_oyunSayac >= 30)
         {
             _kacincioyun = Random.Range(2, 7);
+            _artisPuani = 20;
         }
         
 
@@ -144,10 +155,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+           
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+            
         }
         if (_ustDeger == _altDeger)
         {
@@ -157,7 +170,7 @@ public class GameManager : MonoBehaviour
 
         _ustText.text = _ustDeger.ToString();
         _altText.text = _altDeger.ToString();
-
+        
     }
 
     private void ikinciFonksiyon()
@@ -171,10 +184,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+            
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+           
         }
         if (_ustDeger == _altDeger)
         {
@@ -184,7 +199,7 @@ public class GameManager : MonoBehaviour
 
         _ustText.text = (sayi1 + " + " + sayi2).ToString();
         _altText.text = (sayi3 + " + " + sayi4).ToString();
-
+        
 
     }
 
@@ -201,10 +216,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+           
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+           
         }
         if (_ustDeger == _altDeger)
         {
@@ -213,6 +230,7 @@ public class GameManager : MonoBehaviour
         }
         _ustText.text = (sayi1 + " - " + sayi2).ToString();
         _altText.text = (sayi3 + " - " + sayi4).ToString();
+        
 
     }
     private void dorduncuFonksiyon()
@@ -228,10 +246,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+            
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+            
         }
         if (_ustDeger == _altDeger)
         {
@@ -241,6 +261,7 @@ public class GameManager : MonoBehaviour
         _ustText.text = (sayi1 + " x " + sayi2).ToString();
         _altText.text = (sayi3 + " x " + sayi4).ToString();
 
+        
     }
 
     private void besinciFonksiyon()
@@ -258,10 +279,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+           
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+            
         }
         if (_ustDeger == _altDeger)
         {
@@ -270,6 +293,8 @@ public class GameManager : MonoBehaviour
         }
         _ustText.text = (sayi2 + " / " + sayi1).ToString();
         _altText.text = (sayi4 + " / " + sayi3).ToString();
+
+       
     }
 
     private void altinciFonksiyon()
@@ -289,10 +314,12 @@ public class GameManager : MonoBehaviour
         if (_ustDeger > _altDeger)
         {
             _buyukDeger = _ustDeger;
+            
         }
         else if (_ustDeger < _altDeger)
         {
             _buyukDeger = _altDeger;
+          
         }
         if (_ustDeger == _altDeger)
         {
@@ -301,6 +328,8 @@ public class GameManager : MonoBehaviour
         }
         _ustText.text = ("(" + sayi2 + " + " + sayi3 + ")" + " / " + sayi1).ToString();
         _altText.text = ("(" + sayi5 + " + " + sayi6 + ")" + " / " + sayi4).ToString();
+
+        
     }
 
 
@@ -321,6 +350,8 @@ public class GameManager : MonoBehaviour
             _oyunSayac++;
             _dogruSayisi++;
             _trueFalse.activeTrue();
+            _toplamPuan += _artisPuani;
+            _puanText.text = _toplamPuan.ToString();
             KacinciOyun();
 
         }
@@ -331,6 +362,8 @@ public class GameManager : MonoBehaviour
             _oyunSayac++;
             _yanlisSayisi++;
             _trueFalse.activeFalse();
+            _toplamPuan -= 10;
+            _puanText.text = _toplamPuan.ToString();
             KacinciOyun();
         }
 
