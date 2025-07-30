@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d01f4e687e11b1945aca2b6ccd150a82
+guid: ed9599b93b28ac44a81bef71df064c49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8540406312841666024
-    second: geriSayim_0
+      213: 8907148798259817652
+    second: BaslaButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: geriSayim_0
+      name: BaslaButton_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 21
-        width: 100
-        height: 100
+        x: 78
+        y: 71
+        width: 338
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 812a19d15b16a7980800000000000000
-      internalID: -8540406312841666024
+      spriteID: 4bce2d1d3ac8c9b70800000000000000
+      internalID: 8907148798259817652
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      geriSayim_0: -8540406312841666024
+      BaslaButton_0: 8907148798259817652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

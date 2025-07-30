@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dikdortgennBack_0: 8846466808066295659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
